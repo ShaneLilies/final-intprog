@@ -12,7 +12,7 @@ module.exports = {
     rejectRequest,
     getByEmployeeId
 };
-
+    
 async function getAll() {
     const requests = await db.Request.findAll({
         include: [

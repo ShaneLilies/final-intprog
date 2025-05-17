@@ -17,7 +17,7 @@ function model(sequelize) {
       }
     }
   };
-  
+      
   const options = {
     timestamps: true
   };

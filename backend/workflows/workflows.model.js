@@ -15,7 +15,7 @@ function model(sequelize) {
             validate: {
                 isIn: [['onboarding', 'offboarding', 'transfer', 'promotion']]
             }
-        },
+        },    
         status: {
             type: DataTypes.STRING,
             allowNull: false,

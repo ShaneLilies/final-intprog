@@ -20,7 +20,7 @@ const createSchema = (req, res, next) => {
     });
     validateRequest(req, next, schema);
 };
-
+    
 const updateSchema = (req, res, next) => {
     const schema = Joi.object({
         type: Joi.string().valid('onboarding', 'offboarding', 'transfer', 'promotion'),

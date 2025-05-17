@@ -18,7 +18,7 @@ router.put('/:id/approve', authorize(Role.Admin), approveRequest);
 router.put('/:id/reject', authorize(Role.Admin), rejectRequest);
 
 module.exports = router;
-
+    
 // Schema
 const createSchema = Joi.object({
     type: Joi.string().valid('equipment', 'leave', 'resource', 'other').required(),

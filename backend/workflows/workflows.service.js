@@ -12,7 +12,7 @@ module.exports = {
     workflowDetails,
     getWorkflowModelById
 };
-
+    
 async function getAll() {
     const workflows = await db.Workflow.findAll({
         include: [{
@@ -23,7 +23,7 @@ async function getAll() {
                 as: 'department'
             }]
         }]
-    });
+    });    
     return workflows.map(x => workflowDetails(x));
 }
 
