@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://final-intprog-1dw5.onrender.com'
+    apiUrl: 'https://final-intprog-krup.onrender.com'
   };
   
